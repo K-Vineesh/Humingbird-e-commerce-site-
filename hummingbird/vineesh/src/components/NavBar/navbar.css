@@ -1,14 +1,29 @@
+
 .navbar {
-    background-color: black; 
-    color: #fff; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
-  }
+  background-color: black; 
+  color: #fff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar appears above other content */
+  transition: top 1s ease;
+}
+
+/* Add additional styles for the navbar when fixed if needed */
+.fixed .navbar-links {
+  margin-right: 30px; /* Example style change when navbar is fixed */
+}
+
+
   .navbar-left {
     display: flex;
     align-items: center;
