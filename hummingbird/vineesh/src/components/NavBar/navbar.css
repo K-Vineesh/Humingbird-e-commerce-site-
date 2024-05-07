@@ -1,0 +1,56 @@
+.navbar {
+    background-color: black; 
+    color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    width: 224px;
+    padding-left: 30px;
+  }
+  
+  .navbar-center {
+    text-align: center; 
+  }
+  
+  .navbar-logo {
+    text-decoration: none;
+   
+  }
+
+  .logo-image {
+    width: 300px;
+    height: 75px; /* Adjust width of the logo image as needed */
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-right: 2rem;
+  }
+  
+  .navbar-icon {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  
+  .navbar-icon:hover {
+    color: #ddd;
+  }
