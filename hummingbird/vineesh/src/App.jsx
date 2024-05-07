@@ -10,9 +10,9 @@ import image3 from "./components/display/img3.jpg"
 function App() {
   const images = [
     
-    image1,
-    image2,
-    image3
+    image3,
+    image2,image1
+    
     // Add more image URLs as needed
   ];
   return (
@@ -21,6 +21,8 @@ function App() {
       <Announcement />
       <Navbar />
       <ImageCarousel images={images} />
+      <ImageCarousel images={images} />
+
     </>
 
   );

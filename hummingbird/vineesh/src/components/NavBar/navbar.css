@@ -1,26 +1,61 @@
-
 .navbar {
-  background-color: black; 
-  color: #fff; 
+  background-color: black;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
+  transition: 3s ease;
 }
 
 .fixed {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* Ensure the navbar appears above other content */
-  transition: top 1s ease;
+  z-index: 1000;
+  animation: slideIn 0.5s ease forwards; /* Apply the animation */
 }
+
+@keyframes slideIn {
+  from {
+    top: -100px; /* Starting position above the viewport */
+  }
+  to {
+    top: 0; /* Ending position at the top of the viewport */
+  }
+}
+
+
 
 /* Add additional styles for the navbar when fixed if needed */
 .fixed .navbar-links {
-  margin-right: 30px; /* Example style change when navbar is fixed */
+  margin-right: 30px;
+}
+
+/* Add styles for the logo when navbar is fixed */
+.fixed .navbar-logo {
+  transform: translateY(-50%);
+}
+
+/* Add styles for the logo image when navbar is fixed */
+.fixed .logo-image {
+  width: 300px; /* Adjust width of the logo image when navbar is fixed */
+}
+
+/* Add styles for navbar left section when fixed */
+.fixed .navbar-left {
+  padding-left: 30px; /* Adjust padding when navbar is fixed */
+}
+
+/* Add styles for navbar icon when fixed */
+.fixed .navbar-icon {
+  font-size: 1.2rem; /* Adjust font size when navbar is fixed */
+}
+
+/* Add styles for navbar link when fixed */
+.fixed .navbar-link {
+  font-size: 1rem; /* Adjust font size when navbar is fixed */
 }
 
 
