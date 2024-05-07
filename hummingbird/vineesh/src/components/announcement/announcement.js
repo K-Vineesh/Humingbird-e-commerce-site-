@@ -1,10 +1,38 @@
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 function Announcement() {
-    return (
-        <div id="offer-nav">
-          <p style={{margin:"0",
-          }}>FLAT 50% OFF, ON YOUR FIRST ORDER <a href="#" style={{color:"black"}}>DOWNLOAD NOW</a> </p>
-        </div>
-    );
-  }
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+  };
+
+    
+    const  texts=[
+        "FLAT 30% OFF, ON YOUR FIRST ORDER",
+        "FLAT 50% OFF, ON SELECT COLLECTIONS",
+
+        "Subscribe to our newsletter for exclusive deals!"
+      ]
   
-  export default Announcement;
+  return (
+    <Slider {...settings} style={{overflow:"hidden"}}>
+      {texts.map((text, index) => (
+        <div key={index}>
+          <div id="offer-nav">
+            <p style={{ margin: "0" }}>{text}</p>
+          </div>
+        </div>
+      ))}
+    </Slider>
+  );
+}
+
+export default Announcement;

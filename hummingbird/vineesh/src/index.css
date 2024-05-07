@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: center;
   height: 40px;
-  background-color: red;
+  background-color: rgb(186, 4, 4);
   color: white;
   align-content: center;
   align-items: center;
