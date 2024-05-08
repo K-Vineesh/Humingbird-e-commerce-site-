@@ -13,7 +13,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
   animation: slideIn 0.5s ease forwards; /* Apply the animation */
 }
 
@@ -145,6 +145,7 @@
     background-color: black;
     padding: 20px;
     box-sizing: border-box;
+    z-index: 1000;
   }
   
   .exit-icon {

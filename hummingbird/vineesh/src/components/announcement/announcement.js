@@ -16,10 +16,10 @@ function Announcement() {
 
     
     const  texts=[
-        "FLAT 30% OFF, ON YOUR FIRST ORDER",
-        "FLAT 50% OFF, ON SELECT COLLECTIONS",
+        "FLAT 30% OFF, ON YOUR FIRST ORDER :]",
+        "FLAT 50% OFF, ON SELECT COLLECTIONS :)",
 
-        "Subscribe to our newsletter for exclusive deals!"
+        "SUBSCRIBE TO OUR NEWSLETTER FOR EXCLUSIVE DEALS :)"
       ]
   
   return (
