@@ -163,6 +163,7 @@
   .sidebar-links {
     list-style-type: none;
     padding: 0;
+    padding-top: 25px;
     margin: 0;
     color: #fff;
   }
@@ -174,7 +175,7 @@
   }
   
   .sidebar-links li:last-child {
-    border-bottom: none; /* Remove line after last option */
+    border-bottom: 1px solid #666; /* Remove line after last option */
   }
   
   .sidebar-links li:hover {
@@ -190,15 +191,43 @@
   .login-icon {
     margin-right: 10px;
     margin-left: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
     color: #fff;
   }
   
   .login-section span {
     color: #fff;
+    font-size: large;
+    font-style: bold;
   }
   
   .section-heading {
     color: #fff;
     margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    padding-top: 45px;
+    flex-wrap: wrap; /* Allow icons to wrap to the next line */
+    justify-content: center; /* Center the icons horizontally */
+    
+  }
+  
+  .social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 17px; /* Increase spacing between icons */
+    padding: 10px; /* Add padding to create space for the border */
+    border: 2px solid white; /* Add white border around the icons */
+    border-radius: 50%; /* Make the border circular */
+
+  }
+  
+  .social-icon:hover {
+    color: #ddd;
+    border-color: #ddd; /* Change border color on hover */
   }
   
