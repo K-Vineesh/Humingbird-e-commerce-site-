@@ -1,0 +1,23 @@
+/* card.css */
+.shirt-card {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+    padding: 20px;
+    text-align: center;
+    width: 388px; /* Set a specific width for the card */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.shirt-image {
+    width: 100%;
+    width: 388px;   
+    height: 500px;
+    border-radius: 8px;
+}
+
+.shirt-name {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color:white;
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css'; 
-import { FaBars, FaTimes, FaUser, FaSearch, FaHeart, FaShoppingCart, FaInstagram, FaFacebook, FaYoutube, FaPinterest,FaTwitter, FaLinkedin } from 'react-icons/fa'; // Import the new icons
+import { FaBars, FaTimes, FaUser, FaSearch, FaHeart, FaShoppingCart, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa'; // Import the new icons
 import logo from './logo.jpg'; 
 
 function Navbar() {
@@ -72,6 +72,7 @@ function Navbar() {
                 <span>LOG IN</span>
               </div>
             </div>
+            <div id='hi'>
             <ul className="sidebar-links">
               <li className="section-heading">NEW ARRIVALS</li>
               <li>BEST SELLING</li>
@@ -86,10 +87,7 @@ function Navbar() {
               <FaInstagram className="social-icon" />
               <FaFacebook className="social-icon" />
               <FaYoutube className="social-icon" />
-              <FaPinterest className="social-icon" />
-              <FaLinkedin className="social-icon" />
-              <FaTwitter className='social-icon'/>
-            </div>
+            </div></div>
           </div>
         </div>
       )}

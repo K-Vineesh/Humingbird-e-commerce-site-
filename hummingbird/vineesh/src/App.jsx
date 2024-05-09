@@ -1,5 +1,6 @@
 import Navbar from "./components/NavBar/navbar";
 import Announcement from "./components/announcement/announcement";
+import Cards from "./components/Card/card";
 import ImageCarousel from "./components/display/display";
 import image1 from "./components/display/img1.jpg"
 import image2 from "./components/display/img2.jpg"
