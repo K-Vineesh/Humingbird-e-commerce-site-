@@ -128,19 +128,7 @@
   color: #ddd;
 }
 
-.social-icons {
-  display: flex;
-}
 
-.social-icon {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-right: 1rem;
-}
-
-.social-icon:hover {
-  color: #ddd;
-}
 
 .sidebar-overlay {
   position: fixed;
@@ -401,9 +389,7 @@
 .login-icon {
   margin-right: 10px;
   margin-left: 15px;
-  padding: 10px;
-  border: 2px solid white;
-  border-radius: 50%;
+ 
   color: #fff;
 }
 
@@ -429,14 +415,12 @@
 
 .social-icon {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 17px;
   /* Increase spacing between icons */
-  padding: 10px;
+
   /* Add padding to create space for the border */
-  border: 2px solid white;
-  /* Add white border around the icons */
-  border-radius: 50%;
+
   /* Make the border circular */
 }
 
