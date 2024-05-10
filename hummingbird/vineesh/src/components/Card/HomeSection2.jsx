@@ -1,19 +1,24 @@
 import React ,{useState}from 'react';
-
-const CardSmall = ({ title, description, imageUrl, hoverImageUrl }) => {
+import './card.css'
+const CardSmall = ({ description, imageUrl, hoverImageUrl,size,price }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
-      className="max-w-xs rounded overflow-hidden shadow-lg relative"
+      className="card max-w-xs overflow-hidden relative"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <img className="w-full" src={isHovered ? hoverImageUrl : imageUrl} alt="Card" />
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{title}</div>
-        <p className="text-gray-700 text-base">
+      <div className="py-3">
+        <p className="text-sm">
           {description}
+        </p>
+        <p className="text-gray-700 text-sm mt-1">
+          {price}
+        </p>
+        <p className="text-gray-700 text-sm mt-1">
+          {size}
         </p>
       </div>
     </div>
