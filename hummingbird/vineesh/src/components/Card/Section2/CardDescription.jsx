@@ -1,6 +1,6 @@
 import React ,{useState}from 'react';
-import './card.css'
-const CardSmall = ({ description, imageUrl, hoverImageUrl,size,price }) => {
+import '../card.css'
+const CardDes = ({ description, imageUrl, hoverImageUrl,size,price }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -25,4 +25,4 @@ const CardSmall = ({ description, imageUrl, hoverImageUrl,size,price }) => {
   );
 };
 
-export default CardSmall;
+export default CardDes;
