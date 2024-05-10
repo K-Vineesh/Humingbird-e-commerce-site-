@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css'; 
-import { FaBars, FaTimes, FaUser, FaSearch, FaHeart, FaShoppingCart, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa'; // Import the new icons
+import { FiMenu, FiX, FiUser, FiSearch, FiHeart, FiShoppingCart, FiInstagram, FiFacebook, FiYoutube } from 'react-icons/fi'; // Import the new icons
 import logo from './logo.jpg'; 
 
 function Navbar() {
@@ -46,7 +46,7 @@ function Navbar() {
     <>
       <nav className={isNavbarFixed ? 'navbar fixed' : 'navbar'} style={{ backgroundColor: 'black', display: "flex", justifyContent: 'space-between' }}> 
         <div className="navbar-left">
-          <FaBars className="navbar-icon" onClick={toggleSidebar} />
+          <FiMenu className="navbar-icon" onClick={toggleSidebar} />
         </div>
         <div>
           <a href="/" className="navbar-logo navbar-center">
@@ -55,10 +55,10 @@ function Navbar() {
         </div>
         <div className="navbar-right">
           <ul className="navbar-links">
-            <li><a href="/login"><FaUser className="navbar-icon" /></a></li>
-            <li><a href="/search"><FaSearch className="navbar-icon" /></a></li>
-            <li><a href="/favorites"><FaHeart className="navbar-icon" /></a></li>
-            <li><a href="/cart"><FaShoppingCart className="navbar-icon" /></a></li>
+            <li><a href="/login"><FiUser className="navbar-icon" /></a></li>
+            <li><a href="/search"><FiSearch className="navbar-icon" /></a></li>
+            <li><a href="/favorites"><FiHeart className="navbar-icon" /></a></li>
+            <li><a href="/cart"><FiShoppingCart className="navbar-icon" /></a></li>
           </ul>
         </div>
       </nav>
@@ -66,9 +66,9 @@ function Navbar() {
         <div className="sidebar-overlay" onClick={toggleSidebar}>
           <div className="sidebar" onClick={(e) => e.stopPropagation()}>
             <div className="sidebar-header">
-              <FaTimes className="exit-icon" onClick={toggleSidebar} />
+              <FiX className="exit-icon" onClick={toggleSidebar} />
               <div className={isLoginFixed ? 'login-section fixed' : 'login-section'}>
-                <FaUser className="login-icon" />
+                <FiUser className="login-icon" />
                 <span>LOG IN</span>
               </div>
             </div>
@@ -84,9 +84,9 @@ function Navbar() {
               <li>RELOVE</li>
             </ul>
             <div className="social-icons">
-              <FaInstagram className="social-icon" />
-              <FaFacebook className="social-icon" />
-              <FaYoutube className="social-icon" />
+              <FiInstagram className="social-icon" />
+              <FiFacebook className="social-icon" />
+              <FiYoutube className="social-icon" />
             </div></div>
           </div>
         </div>

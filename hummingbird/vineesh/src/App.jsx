@@ -17,14 +17,12 @@ function App() {
   const images = [
 
     image3,
-    image2, image1
-
-    // Add more image URLs as needed
-  ];
+    image2,
+    image1
+];
 
   
   return (
-
     <>
       <Announcement />
       <Navbar />
@@ -35,10 +33,8 @@ function App() {
         <Cards1 imageSrc={image7} />
         <Cards1 imageSrc={image5} />
         <Cards1 imageSrc={image6} />
-
       </div>
       <ImageCarousel images={images} />
-    
       <Footer />     
     </>
 
